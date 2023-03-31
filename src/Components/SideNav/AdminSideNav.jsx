@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import NavLinkComponent from "./navLink";
+import NavLinkComponent from "./NavLink";
 import { gsap } from "gsap";
 import "./sidenav.scss";
 
