@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { split } from '../../animations/text'
 import { gsap } from "gsap";
-import "./notFound.scss"
+import "./notfound.scss"
 
 const NotFound = () => {
 
