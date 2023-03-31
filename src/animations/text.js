@@ -1,4 +1,4 @@
-//Animation for NotFound texts and button
+//Animation for NotFound texts and buttons
 
 import Splitting from "splitting";
 import { IO } from "./observe";
