@@ -1,0 +1,82 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/components/global";
+
+.billpayContent {
+  background-color: $white;
+  padding: 1rem ;
+
+
+  .navigation {
+    margin: 1rem 0 2.9375rem 0;
+
+    .primaryNav {
+      display: flex;
+      gap: 1.5rem;
+      height: 2rem;
+
+    .link {
+        color: $primary;
+        font-size: $textSmall;
+        font-weight: $fontMedium;
+        transition: all .2s ease;
+        background: transparent;
+        padding: 0.4rem 0.5rem;
+        &:hover {
+          background: rgba(181, 14, 14, 0.9);
+          border-radius: 5px;
+          padding: 0.4rem 0.7rem;
+          color: $white;
+        }
+      }
+      .active {
+        border-bottom: 2px solid rgba(181, 14, 14, 0.9);
+      }
+
+      .primaryNavSearch {
+        margin-left: auto;
+        width: 30%;
+        position: relative;
+
+        .searchBar {
+          border-radius: 50px;
+          height: 2.5rem;
+          width: 100%;
+          border: 2px solid $primary;
+          padding: 0.5rem 0.8rem;
+        }
+        .searchIcon {
+          position: absolute;
+          right: 1rem;
+          top: 0.5rem;
+          z-index: 1;
+          padding-left: 0.5rem;
+          
+      }
+      .searchIconBackground {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 125%;
+        width: 15%;
+        background-color: $primary;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      }
+    }
+
+    .secondaryNav {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+
+      a {
+        color: $black;
+        font-size: $textSmall;
+        font-weight: $fontMedium;
+      }
+    }
+  }
+}
+
+

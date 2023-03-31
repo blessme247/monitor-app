@@ -1,0 +1,81 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/components/global";
+
+
+        .topBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .titleText {
+                @extend %titleText;
+            }
+
+            .statusCategory {
+                display: flex;
+                color: $white;
+                div {
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    width: 10.9375rem;
+                    height: 3.125rem;
+                    font-size: $textSmall;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin-right: 1rem;
+                        transform: translateY(0.2rem);
+                    }
+                }
+                div + div {
+                    margin-left: 1rem;
+                }
+                .success {
+                    background-color: #33AD64;
+                    
+                }
+                .pending {
+                    background-color: #FC9722;
+                }
+                .failed {
+                    background-color: #FC0202;
+                }
+            }
+        }
+
+        .content {
+            background-color: $white;
+            padding: 1rem;
+            margin-top: 2rem;
+
+            .searchBarWrapper {
+                position: relative;
+                margin: 1.5rem 0;
+
+                .searchBar {
+                    width: 100%;
+                    height: 2.5rem;
+                    padding-left: 4rem;
+                    border: 0.25px solid rgba(252, 2, 2, 0.5);
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+                    
+                }
+
+                .searchIcon {
+                    position: absolute;
+                    left: 1.5rem;
+                    top: 0.5rem;
+                    
+                }
+            }
+
+
+            .contentTitle {
+                font-weight: $fontSemiBold;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+
+

@@ -1,0 +1,203 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/components/global";
+
+.dashboardContentWrapper {
+  padding-top: 1rem;
+
+  .titleText {
+    @extend %titleText;
+  }
+
+  .firstTopDetails {
+    margin-bottom: 2rem;
+
+    .rightText span {
+      font-size: $textSemiMedium;
+      color: #33AD64;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .topDetails {
+    @extend %flex;
+    width: 100%;
+
+    .detail {
+        height: 4.375rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+
+        width: 18%;
+            
+
+            span {
+              margin-right: 1rem;
+
+              img {
+                transform: translateY(0.3rem);
+              }
+            }
+        }
+    }
+    .detail1 {
+      background-color: #569DAC;
+      color: $white;
+    }
+    .detail2 {
+      border: 1px solid #F6B819;
+      background-color: $white;
+      color: $black;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #569DAC;
+        color: $white;
+        border: 1px solid #569DAC;
+      }
+
+    }
+    .detail3 {
+      border: 1px solid #33AD64;
+      background-color: $white;
+      color: $black;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #569DAC;
+        color: $white;
+        border: 1px solid #569DAC;
+      }
+
+    }
+    .detail4 {
+      border: 1px solid $primary;
+      background-color: $white;
+      color: $black;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #569DAC;
+        color: $white;
+        border: 1px solid #569DAC;
+      }
+
+    }
+    .detail5 {
+      border: 1px solid #0D0B8A;
+      background-color: $white;
+      color: $black;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #569DAC;
+        color: $white;
+        border: 1px solid #569DAC;
+      }
+
+    }
+  }
+
+  .chartsContainer {
+    @extend %flex;
+    margin-top: 2rem;
+
+    .chartBoxWrapper {
+      width: 60%;
+      background-color: $white;
+      padding: 2.4rem ;
+      border-radius: 5px;
+    }
+
+    .pieChartWrapper {
+      width: 37%;
+      background-color: $white;
+      padding: 2rem;
+      border-radius: 5px;
+
+      .sectionTop {
+        @extend %flex;
+        margin-bottom: 2.1875rem;
+
+        .sectionTopTitle {
+          font-size: $textSemiMedium;
+          font-weight: $fontSemiBold;
+        }
+        .sectionTopDropdownTitle {
+          font-size: $textSmall;
+        }
+      }
+      .sectionMiddle {
+        @extend %flex;
+        position: relative;
+
+        .pieCharts {
+          width: 70%;
+
+          .firstPieChart {
+            background-color: #569DAC;
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+          }
+          .secondPieChart {
+            background-color: #FC9722BF;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            top: 35%;
+            right: 76%;
+          }
+          .thirdPieChart {
+            background-color: $white;
+            border: 1px solid #569DAC;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            top: 65%;
+            right: 66%;
+          }
+        }
+        .chartBrief {
+          div {
+            @extend %flex;
+            p {
+              font-size: $textSmall;
+              
+            }
+            span {
+              width: 24px;
+              height: 16px;
+              margin-left: 1rem;
+            }
+            .span1 {
+              background-color: #569DAC;
+            }
+            .span2 {
+              background-color: #FC9722BF;
+            }
+            .span3 {
+              background-color: $white;
+              border: 1px solid #4DD2EF;
+            }
+          }
+        }
+      }
+
+      .sectionBottom {
+        margin-top: 2.1875rem;
+        @extend %flex;
+
+        div {
+          .title {
+            font-size: $textVerySmall ;
+            margin-bottom: 0.375rem;
+          }
+          .amount {
+            font-size: $textSmall;
+            font-weight: $fontBold
+          }
+        }
+      }
+    }
+
+  }

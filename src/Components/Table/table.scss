@@ -1,0 +1,30 @@
+@import "../../sass/abstracts/variables";
+
+table {
+    border-radius: 8px;
+    width: 100%;
+    border-collapse: collapse;
+
+
+    th {
+        text-align: left;
+    }
+    thead {
+        tr {
+            background-color: lighten(#B50E0E, 40%);
+        }
+    }
+ 
+    tbody {
+
+        tr:nth-child(odd) {
+            // border-bottom: 0.25px solid rgba(252, 2, 2, 0.5);
+            border-bottom: 0.25px solid #eee;
+        }
+        tr:nth-child(even) {
+            // border-bottom: 0.25px solid $black;
+            border-bottom: 0.25px solid #eee;
+        }
+
+    }
+}

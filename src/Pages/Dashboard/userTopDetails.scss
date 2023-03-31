@@ -1,0 +1,26 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/components/global";
+
+.userTopDetails {
+    @extend %flex;
+    width: 100%;
+
+    .detail {
+        height: 4.375rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+
+        width: 23%;
+            
+
+            span {
+              margin-right: 1rem;
+
+              img {
+                transform: translateY(0.3rem);
+              }
+            }
+        }
+    }

@@ -1,0 +1,47 @@
+@import "../../sass/abstracts/variables";
+
+.wrapper {
+    background-image: url('../../assets/Images/bg.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+
+    .top {
+        padding: 2rem 3%;
+
+        img {
+                width: 150px;
+                object-fit: cover;
+                object-position: center;
+        }
+    }
+
+    .formWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+
+        input{
+            height: 4.6875rem;
+            width: 220px;
+            padding-left: 1rem;
+            margin-right: .5rem;
+        }
+
+        button {
+            background-color: $primary;
+            height: 4.6875rem;
+            width: 220px;
+            border: none;
+            color: $white;
+            font-size: 16px;
+        }
+        
+    }
+}

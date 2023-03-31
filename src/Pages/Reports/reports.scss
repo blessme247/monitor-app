@@ -1,0 +1,82 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/components/global";
+
+.reportsContent {
+
+    .reportsTop {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        .firstLink {
+            font-size: $textSemiMedium;
+            color: $black;
+        }
+
+        .searchBarWrapper {
+            margin-left: auto;
+            width: 30%;
+            position: relative;
+            // overflow-x: hidden;
+    
+            .searchBar {
+              border-radius: 50px;
+              height: 2.5rem;
+              width: 100%;
+              border: 2px solid $primary;
+              padding: 0.5rem 0.8rem;
+            }
+            .searchIcon {
+              position: absolute;
+              right: 1rem;
+              top: 0.5rem;
+              z-index: 1;
+              padding-left: 0.5rem;
+              
+          }
+          .searchIconBackground {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 15%;
+            background-color: $primary;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+          }
+          }
+
+          .links {
+            margin-left: auto;
+            display: flex;
+            gap: 2.25rem;
+
+            .link {
+                img {
+                    margin-right: 1rem;
+                    transform: translateY(0.3rem);
+                }
+                a {
+                    font-size: $textSmall;
+                    color: $black;
+                }
+            }
+          }
+    }
+
+    .terminalTypes {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        a {
+            width: 50%;
+            background-color: #b50e0e;
+            text-align: center;
+            height: 2.5rem;
+            color: $white;
+            font-size: $textBase;
+            padding-top: 0.4rem;
+
+        }
+    }
+}

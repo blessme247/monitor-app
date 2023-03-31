@@ -1,0 +1,40 @@
+@import "../../sass/abstracts/variables";
+
+.navWrapper {
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+        width: 1200px;
+        max-width: 98%;
+        margin: 0 auto;
+        color: $black;
+        font-size: 0.85rem;
+        
+        // z-index: 4;
+        .logoWrapper{
+            width: 15%;
+            img {
+                width: 150px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            width: 25%;
+
+        }
+
+    }
+}

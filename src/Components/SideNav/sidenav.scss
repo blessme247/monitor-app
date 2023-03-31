@@ -1,0 +1,54 @@
+@import "../../sass/abstracts/variables";
+
+.sideNavWrapper {
+    background-color: lighten($primary, 2% );
+    position: fixed;
+    width: fit-content;
+    transition: 300ms linear all;
+    width: 20%;
+    overflow-y: scroll;
+    
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem ;
+        gap: 1.2rem;
+        height: calc(100vh - 6rem);
+       
+        .navlink {
+            color: $white;
+            font-weight: $fontSemiBold;
+        
+            img {
+                padding-right: 0.5rem;
+                transform: translateY(0.3rem);
+            }
+        }
+        .active{
+            
+            background: rgba(181, 14, 14, 0.9);
+            border-radius: 5px;
+            padding: 0.5rem ;
+        
+        
+        }
+
+    }
+}
+
+
+    .secondaryNavLinksWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .secondaryNavLink {
+        color: $white;
+        font-size: $textSmall ;
+        margin-left: 2rem;
+        margin-bottom: 0.2rem;
+        opacity: 0;
+        
+    }
+
+   
